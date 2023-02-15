@@ -19,7 +19,9 @@ public class OnDataEncryptionKeyChangeStreamHandler implements StreamHandler {
         if (AGConnectInstance.getInstance() == null) {
             AGConnectInstance.initialize(activity.getApplicationContext());
         }
-        if (AGConnectCloudDB.getInstance() == null) {
+        try {
+            AGConnectCloudDB.getInstance();
+        } catch (Exception e) {
             AGConnectCloudDB.initialize(activity.getApplicationContext());
         }
     }
