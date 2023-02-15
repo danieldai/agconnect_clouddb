@@ -73,7 +73,7 @@ class _HomeState extends State<_Home> {
       final SignInResult signInResult =
           await AGCAuth.instance.signInAnonymously();
       if (signInResult.user != null) {
-        setState(() => _currentUserUid = signInResult.user.uid);
+        setState(() => _currentUserUid = signInResult.user?.uid);
       } else {
         setState(() => _currentUserUid = '???');
       }

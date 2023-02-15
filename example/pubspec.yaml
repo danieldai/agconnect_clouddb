@@ -10,7 +10,7 @@ dependencies:
     sdk: flutter
   agconnect_clouddb:
     path: ../
-  agconnect_auth:
+  agconnect_auth: ^1.5.0+300
 
 dev_dependencies:
   flutter_test:
