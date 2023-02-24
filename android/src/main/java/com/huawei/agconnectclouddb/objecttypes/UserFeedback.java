@@ -18,7 +18,6 @@ import java.util.Date;
  */
 @PrimaryKeys({"id"})
 public final class UserFeedback extends CloudDBZoneObject {
-    @AutoIncrement(isIncreased = true)
     private Long id;
 
     private String category;
