@@ -4,7 +4,6 @@
  */
 package com.huawei.agconnectclouddb.objecttypes;
 
-import com.huawei.agconnect.cloud.database.annotations.AutoIncrement;
 import com.huawei.agconnect.cloud.database.annotations.PrimaryKeys;
 import com.huawei.agconnect.cloud.database.CloudDBZoneObject;
 import com.huawei.agconnect.cloud.database.Text;
@@ -18,8 +17,7 @@ import java.util.Date;
  */
 @PrimaryKeys({"id"})
 public final class UserFeedback extends CloudDBZoneObject {
-    @AutoIncrement(isIncreased = true)
-    private Long id;
+    private String id;
 
     private String category;
 
@@ -27,17 +25,17 @@ public final class UserFeedback extends CloudDBZoneObject {
 
     private String userId;
 
-    private Date timestamp;
+    private String timestamp;
 
     public UserFeedback() {
         super(UserFeedback.class);
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
@@ -65,11 +63,11 @@ public final class UserFeedback extends CloudDBZoneObject {
         return userId;
     }
 
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 
-    public Date getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
