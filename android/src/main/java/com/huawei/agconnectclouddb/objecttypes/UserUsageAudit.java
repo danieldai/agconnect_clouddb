@@ -18,6 +18,7 @@ import java.util.Date;
  */
 @PrimaryKeys({"id"})
 public final class UserUsageAudit extends CloudDBZoneObject {
+    @AutoIncrement(isIncreased = true)
     private Long id;
 
     private Date timestamp;
