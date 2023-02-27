@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType UserFeedback.
  *
- * @since 2023-02-24
+ * @since 2023-02-27
  */
 @PrimaryKeys({"id"})
 public final class UserFeedback extends CloudDBZoneObject {
@@ -25,7 +25,7 @@ public final class UserFeedback extends CloudDBZoneObject {
 
     private String userId;
 
-    private String timestamp;
+    private Date createdAt;
 
     public UserFeedback() {
         super(UserFeedback.class);
@@ -63,12 +63,12 @@ public final class UserFeedback extends CloudDBZoneObject {
         return userId;
     }
 
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public String getTimestamp() {
-        return timestamp;
+    public Date getCreatedAt() {
+        return createdAt;
     }
 
 }
