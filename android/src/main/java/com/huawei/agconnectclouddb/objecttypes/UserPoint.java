@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType UserPoint.
  *
- * @since 2023-02-27
+ * @since 2023-03-02
  */
 @PrimaryKeys({"userId"})
 public final class UserPoint extends CloudDBZoneObject {
@@ -24,6 +24,8 @@ public final class UserPoint extends CloudDBZoneObject {
     private Date updatedAt;
 
     private String description;
+
+    private Long days;
 
     public UserPoint() {
         super(UserPoint.class);
@@ -59,6 +61,14 @@ public final class UserPoint extends CloudDBZoneObject {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setDays(Long days) {
+        this.days = days;
+    }
+
+    public Long getDays() {
+        return days;
     }
 
 }

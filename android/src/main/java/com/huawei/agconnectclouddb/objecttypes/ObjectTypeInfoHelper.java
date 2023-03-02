@@ -15,18 +15,18 @@ import java.util.List;
 /**
  * Definition of ObjectType Helper.
  *
- * @since 2023-02-27
+ * @since 2023-03-02
  */
 public final class ObjectTypeInfoHelper {
     private static final int FORMAT_VERSION = 2;
-    private static final int OBJECT_TYPE_VERSION = 12;
+    private static final int OBJECT_TYPE_VERSION = 14;
 
     public static ObjectTypeInfo getObjectTypeInfo() {
         ObjectTypeInfo objectTypeInfo = new ObjectTypeInfo();
         objectTypeInfo.setFormatVersion(FORMAT_VERSION);
         objectTypeInfo.setObjectTypeVersion(OBJECT_TYPE_VERSION);
         List<Class<? extends CloudDBZoneObject>> objectTypeList = new ArrayList<>();
-        Collections.addAll(objectTypeList, UserUsageLog.class, UserPointLog.class, UserFeedback.class, UserPoint.class);
+        Collections.addAll(objectTypeList, UserUsageLog.class, UserPointLog.class, UserInfo.class, UserFeedback.class, UserPoint.class);
         objectTypeInfo.setObjectTypes(objectTypeList);
         return objectTypeInfo;
     }

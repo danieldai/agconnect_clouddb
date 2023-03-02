@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType UserFeedback.
  *
- * @since 2023-02-27
+ * @since 2023-03-02
  */
 @PrimaryKeys({"id"})
 public final class UserFeedback extends CloudDBZoneObject {

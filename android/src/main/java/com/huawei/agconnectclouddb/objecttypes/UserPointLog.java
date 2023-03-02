@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType UserPointLog.
  *
- * @since 2023-02-27
+ * @since 2023-03-02
  */
 @PrimaryKeys({"id"})
 public final class UserPointLog extends CloudDBZoneObject {
