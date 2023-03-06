@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType UserInfo.
  *
- * @since 2023-03-02
+ * @since 2023-03-06
  */
 @PrimaryKeys({"userId"})
 public final class UserInfo extends CloudDBZoneObject {
@@ -29,11 +29,11 @@ public final class UserInfo extends CloudDBZoneObject {
 
     private String address;
 
-    private String start;
-
     private Date createdAt;
 
     private Date updatedAt;
+
+    private String star;
 
     public UserInfo() {
         super(UserInfo.class);
@@ -87,14 +87,6 @@ public final class UserInfo extends CloudDBZoneObject {
         return address;
     }
 
-    public void setStart(String start) {
-        this.start = start;
-    }
-
-    public String getStart() {
-        return start;
-    }
-
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
@@ -109,6 +101,14 @@ public final class UserInfo extends CloudDBZoneObject {
 
     public Date getUpdatedAt() {
         return updatedAt;
+    }
+
+    public void setStar(String star) {
+        this.star = star;
+    }
+
+    public String getStar() {
+        return star;
     }
 
 }
