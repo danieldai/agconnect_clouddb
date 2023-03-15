@@ -8,11 +8,11 @@
 @implementation UserUsageLog
 
 + (NSArray<NSString *> *)primaryKeyProperties {
-    return @[@"id"];
+    return @[@"uuid"];
 }
 
 + (NSArray<NSString *> *)notNullProperties {
-    return @[@"id"];
+    return @[@"uuid"];
 }
 
 @end

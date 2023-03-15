@@ -8,12 +8,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserPointLog : AGCCloudDBObject
-@property (nonatomic, copy) NSString *id;
+@property (nonatomic, copy) NSString *uuid;
+@property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *usageId;
-@property (nonatomic, strong) NSNumber<AGCInt> *point;
+@property (nonatomic, copy) NSString *point;
 @property (nonatomic, copy) NSString *description;
 @property (nonatomic, strong) NSDate *createdAt;
-@property (nonatomic, copy) NSString *userId;
+@property (nonatomic, strong) NSDate *updatedAt;
 @end
 
 NS_ASSUME_NONNULL_END

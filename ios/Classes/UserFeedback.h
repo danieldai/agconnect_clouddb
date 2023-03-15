@@ -8,11 +8,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserFeedback : AGCCloudDBObject
-@property (nonatomic, copy) NSString *id;
+@property (nonatomic, copy) NSString *uuid;
+@property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *category;
 @property (nonatomic, copy) NSString *description;
-@property (nonatomic, copy) NSString *userId;
 @property (nonatomic, strong) NSDate *createdAt;
+@property (nonatomic, strong) NSDate *updatedAt;
 @end
 
 NS_ASSUME_NONNULL_END
