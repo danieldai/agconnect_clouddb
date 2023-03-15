@@ -1,9 +1,9 @@
 // Copyright (c) Huawei Technologies Co., Ltd. 2021-2021. All rights reserved.
 
-#import "ObjC.h"
+#import "DbObjC.h"
 #import <AGConnectDatabase/AGConnectCloudDB.h>
 
-@implementation ObjC 
+@implementation DbObjC
 
 + (BOOL)catchException:(void(^)(void))tryBlock error:(__autoreleasing NSError **)error {
     @try {

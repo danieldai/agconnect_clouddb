@@ -469,7 +469,7 @@ public class AGConnectCloudDBViewModel: NSObject {
         
         
         do {
-            try ObjC.catchException {
+            try DbObjC.catchException {
                 FlutterCloudDBUtils.makeQuery(queryElements: queryElements, query: query, types: types, clazz: clazz, className: className)
             }
         }
