@@ -10,7 +10,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UserUsageLog : AGCCloudDBObject
 @property (nonatomic, copy) NSString *uuid;
 @property (nonatomic, copy) NSString *userId;
-@property (nonatomic, copy) NSString *description;
 @property (nonatomic, copy) NSString *clientVersion;
 @property (nonatomic, copy) NSString *cityId;
 @property (nonatomic, copy) NSString *cityName;
@@ -19,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *osVersion;
 @property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSDate *updatedAt;
+@property (nonatomic, copy) NSString *desc;
 @end
 
 NS_ASSUME_NONNULL_END
